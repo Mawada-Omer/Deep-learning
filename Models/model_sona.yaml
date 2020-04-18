@@ -1,0 +1,75 @@
+backend: tensorflow
+class_name: Sequential
+config:
+  layers:
+  - class_name: Dense
+    config:
+      activation: relu
+      activity_regularizer: null
+      batch_input_shape: !!python/tuple
+      - null
+      - 60
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      name: dense_221
+      trainable: true
+      units: 60
+      use_bias: true
+  - class_name: Dense
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      name: dense_222
+      trainable: true
+      units: 30
+      use_bias: true
+  - class_name: Dense
+    config:
+      activation: sigmoid
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      name: dense_223
+      trainable: true
+      units: 1
+      use_bias: true
+  name: sequential_95
+keras_version: 2.3.1
